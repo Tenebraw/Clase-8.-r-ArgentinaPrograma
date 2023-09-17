@@ -1,9 +1,51 @@
-body{
-    background-color: grey;
-    color:rgb(213, 213, 213);
-    margin: 50px;
+html{
+    height: 100%;
 }
 
-.error {
+body{
+    height: 100%;
+    background: rgb(185,147,214);
+background: radial-gradient(circle, rgba(185,147,214,1) 3%, rgba(140,166,219,1) 100%);
+
+}
+h1{
+text-align: center;
+  padding: 15px;
+ }
+
+ .grupoF{
+    justify-content: center;
+  display: flex;
+ }
+
+ #cantidad-integrantes{
+    width: 50%;
+ }
+
+ .table{
+    width: 50%;
+    display: inline-table;
+ }
+ .card{
+    text-align: center;
+    display: inline-table;
+ }
+ .contenedorcard,
+ .botones{
+    text-align: center;
+ }
+ .error {
     border: 2px solid red;
+}
+#errorProceder,
+#errorEdad {
+    width: 40%;
+  margin-top: 10px;
+}
+input{
+   text-align: center;
+}
+.botones{
+   margin-top: 20px;
+  margin-bottom: 20px  
 }

@@ -1,0 +1,22 @@
+{
+  "name": "clase-8.-r-argentinaprograma",
+  "version": "1.0.0",
+  "description": "Tarea clase 8. Argentina Programa",
+  "main": "js/tarea-clase8.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tenebraw/Clase-8.-r-ArgentinaPrograma.git"
+  },
+  "author": "Adrian T.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tenebraw/Clase-8.-r-ArgentinaPrograma/issues"
+  },
+  "homepage": "https://github.com/Tenebraw/Clase-8.-r-ArgentinaPrograma#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}

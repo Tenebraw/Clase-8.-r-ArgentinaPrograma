@@ -3,43 +3,71 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Tarea 1 & 2 - Clase 6</title>
+    <title>Clase 8. Tarea</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='node_modules/bootstrap/dist/css/bootstrap.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/tarea8.css'>
-       
 </head>
 <body>
-    <header>
-        <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>Tarea 1 y 2 - Clase 6 extended 8</i></h1>
-    </header>
-    <br>
-    
- <form action="" id="integrantes" style="margin-left: 40px;">
-    <label for="edadinput">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCantidad de integrantes del grupo familiar:</label>
-    <input type="number" min="01" id="cantidad-integrantes">
-    <button id="proceder">Proceder</button>
-    <br>
-    <br>
-    <ul id="errorProceder">
-    </ul>
-    <div id="nuevosintegrantes">
-        <br>
-    </div>
-    <ul id="errorEdad">
-    </ul>
-    <br>
-    <button id="calcular" class="botoncalcular" hidden>Calcular</button>
-    <button id="resetear" class="botonresetear" hidden>Reset</button>
-    <button id="calcularsalario" class="calcularsalario" hidden>Calcular Salario</button>
+<header><h1>Clase 8. Tarea Corregida</h1></header>
+<form action="" id="integrantes">
+    <div class="container-fluid text-center">
+        <div class="row justify-content-md-center">
+          <div class="col-auto">
+            <label for="edadinput" class="form-label"><i>Cantidad de integrantes del grupo familiar:</i></label>
+            <div class="input-group mb-3">
+              <input type="number" class="form-control" min="01" id="cantidad-integrantes" placeholder="Cantidad de Integrantes" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary" type="button" id="proceder">Proceder</button>
+            </div>        
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="" role="alert" id="errorProceder">    
+              </div>    
+          </div>
+          <table class="table" id="tabla" hidden>
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Edad</th>
+                <th scope="col"></th> 
+                <th scope="col">Salario</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <div class="row justify-content-md-center">
+            <div class="" role="alert" id="errorEdad">    
+              </div>    
+          </div>
+      </div>
+     <div class="botones">
+        <button type="button" id="calcular"  class="btn btn-outline-primary" hidden>Calcular Edad</button>
+        <button type="button" id="resetear"  class="btn btn-outline-primary" hidden>Reset</button>
+        <button type="button" id="calcularsalario" class="btn btn-outline-primary disabled" hidden>Calcular Salario</button>
+     </div>
     </form>
-    <div id="resultados">
-        <textarea name="" id="resultadosEdad" cols="40" rows="10" disabled hidden></textarea>
-        <textarea name="" id="resultadosSalarios" cols="40" rows="10" disabled hidden ></textarea>
+    <div class="contenedorcard">
+    <div class="card" id="resultadosedad" style="width: 25rem;" hidden>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" id="mayoredad"></li>
+          <li class="list-group-item" id="menoredad"></li>
+          <li class="list-group-item" id="promedioedad"></li>
+        </ul>
+      </div>
+      <div class="card" id="resultadossalarios" style="width: 25rem;" hidden>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" id="mayorsalario"></li>
+          <li class="list-group-item" id="menorsalario"></li>
+          <li class="list-group-item" id="promedioanual"></li>
+          <li class="list-group-item" id="promediomensual"></li>
+        </ul>
+      </div>
     </div>
-
-
     <script src='js/tarea-clase8.js'></script>
     <script src="js/calculostarea.js"></script>
-    <script src="js/pruebas.js"></script>
+    <script src="js/pruebas.js"></script>  
 </body>
 </html>
